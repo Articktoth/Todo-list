@@ -1,0 +1,66 @@
+:root{
+    --mainWhite: #f5f5f5;
+    --mainBlack: #333333;
+    --mainRed: #800303;
+    --mainBlue: #196175;
+    --mainGreen: #3da854;
+}
+body{
+    background: var(--mainWhite);
+    color: #333333;
+}
+.todo-container{
+    background-image: linear-gradient(to bottom, #ffffff, #ebebeb, #d7d7d7, #c4c4c4, #b1b1b1);
+    border-color: var(--mainBlack);
+}
+
+.form-control{
+    border-color: var(--mainBlue);
+}
+.feedback{
+    display: none;
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+}
+.item-icon{
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.complete-item{
+    color: var(--mainGreen);
+}
+.complete-item:hover{
+    color: var(--mainGreen);
+}
+.edit-item{
+    color: var(--mainBlue);
+}
+.edit-item:hover{
+    color: var(--mainBlue);
+}
+.delete-item{
+    color: var(--mainRed);
+}
+.delete-item:hover{
+    color: var(--mainRed);
+}
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.visibility{
+    opacity: 0.5;
+}
+.showItem{
+    display: block;
+}
+.add-item{
+    color: var(--mainWhite);
+    background: var(--mainBlue);
+}
+#clear-list{
+    color: var(--mainWhite);
+    background: var(--mainRed);
+}
